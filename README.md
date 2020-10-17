@@ -16,5 +16,5 @@ Author: Dodo Jaya Raditya
 
 ## Credits
 
-1. Tailwind CSS (<https://tailwindcss.com/>)
+1. Tailwind CSS (https://tailwindcss.com)
 2. Images: from Unsplash
