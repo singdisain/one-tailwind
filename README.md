@@ -2,6 +2,10 @@
 
 One Page - Tailwind CSS Theme inspired by Google Style Landing Page.
 
+## Screenshot
+
+![One Materialize Screenshot](/screenshot.jpg)
+
 ## One Tailwind Theme
 
 Author: Dodo Jaya Raditya
