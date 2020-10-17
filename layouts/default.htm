@@ -1,0 +1,48 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="SingDisain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+
+    <link rel="stylesheet" href=https://use.fontawesome.com/releases/v5.6.3/css/all.css integrity=sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/ crossorigin="anonymous">
+
+    <!-- Main Style -->
+    <link href="{{ 'assets/css/stailwind.css'|theme }}" rel="stylesheet">
+    {% styles %}
+    
+
+  </head>
+
+  <body>
+    <!-- Section: Header -->
+    <header>
+      {% partial 'header' %}
+    </header>
+    
+    <!-- Page Layout -->
+    <main>
+      {% page %}
+    </main>
+
+    <!-- Footer -->
+    {% partial 'footer' %}
+
+    {% framework extras %}
+    {% scripts %}
+  </body>
+</html>
